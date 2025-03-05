@@ -18,9 +18,9 @@ import java.util.Collection;
 public class User implements UserDetails {
     //todo: пофиксить создание id
     @Id
-    @Column(name = "user_id", length = 45)
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+   // @Column(name = "user_id", length = 45)
+    //@GeneratedValue(strategy = GenerationType.AUTO)
+    //private int id;
     @Column(name = "user_name", length = 255)
     private String username;
     @Column(name = "user_email", length = 255)

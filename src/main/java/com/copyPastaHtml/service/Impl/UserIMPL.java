@@ -26,7 +26,7 @@ public class UserIMPL implements UserService {
         String successRegistration = "Регистрация прошла успешно";
 
         User user = new User(
-                userDTO.getUserId(),
+                //userDTO.getUserId(),
                 userDTO.getUserName(),
                 userDTO.getUserEmail(),
                 this.passwordEncoder.encode(userDTO.getUserPassword())

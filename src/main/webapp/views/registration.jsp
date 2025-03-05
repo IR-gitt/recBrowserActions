@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Register - Inventory Management</title>
+    <title>Registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -114,9 +114,10 @@
 <body>
     <div class="card">
         <div class="card-header">
-            <h2 class="register-title">Create Account</h2>
+            <h2 class="registration-title">Create Account</h2>
             <p class="text-light mb-0">Join our community today</p>
         </div>
+
         <div class="card-body">
             <% if(request.getAttribute("error") != null) { %>
                 <div class="alert alert-danger">
@@ -124,26 +125,31 @@
                     <%= request.getAttribute("error") %>
                 </div>
             <% } %>
-            <form action="register" method="POST">
+
+            <form action="registration" method="POST" modelAttribute="userDTO">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="username" name="username" 
+                    <input type="text" class="form-control" id="userName" name="userName"
                            placeholder="Username" required>
                     <i class="fas fa-user"></i>
                 </div>
+
                 <div class="form-group">
-                    <input type="email" class="form-control" id="email" name="email" 
+                    <input type="email" class="form-control" id="userEmail" name="userEmail"
                            placeholder="Email Address" required>
                     <i class="fas fa-envelope"></i>
                 </div>
+
                 <div class="form-group">
-                    <input type="password" class="form-control" id="password" name="password" 
+                    <input type="password" class="form-control" id="userPassword" name="userPassword"
                            placeholder="Password" required>
                     <i class="fas fa-lock"></i>
                 </div>
+
                 <button type="submit" class="btn btn-register">
                     <i class="fas fa-user-plus me-2"></i> Create Account
                 </button>
-            </form>
+            </form >
+
             <div class="login-link">
                 <p>Already have an account? <a href="login">Sign In</a></p>
             </div>

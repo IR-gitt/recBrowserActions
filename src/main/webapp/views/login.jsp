@@ -129,13 +129,13 @@
             <form action="login" method="POST">
 
                 <div class="form-group">
-                    <input type="text" class="form-control" id="username" name="username" 
+                    <input type="text" class="form-control" id="username" name="username"
                            placeholder="Username" required>
                     <i class="fas fa-user"></i>
                 </div>
 
                 <div class="form-group">
-                    <input type="password" class="form-control" id="password" name="password" 
+                    <input type="password" class="form-control" id="password" name="password"
                            placeholder="Password" required>
                     <i class="fas fa-lock"></i>
                 </div>
@@ -146,7 +146,7 @@
             </form>
 
             <div class="register-link">
-                <p>Don't have an account? <a href="register">Create Account</a></p>
+                <p>Don't have an account? <a href="registration">Create Account</a></p>
             </div>
         </div>
     </div>
