@@ -126,16 +126,16 @@
                 </div>
             <% } %>
 
-            <form action="login" method="POST">
+            <form action="login" method="POST"  modelAttribute="userDTO">
 
                 <div class="form-group">
-                    <input type="text" class="form-control" id="username" name="username"
+                    <input type="text" class="form-control" id="userName" name="userName"
                            placeholder="Username" required>
                     <i class="fas fa-user"></i>
                 </div>
 
                 <div class="form-group">
-                    <input type="password" class="form-control" id="password" name="password"
+                    <input type="password" class="form-control" id="userPassword" name="userPassword"
                            placeholder="Password" required>
                     <i class="fas fa-lock"></i>
                 </div>

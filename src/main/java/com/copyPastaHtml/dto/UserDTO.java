@@ -1,6 +1,5 @@
 package com.copyPastaHtml.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 

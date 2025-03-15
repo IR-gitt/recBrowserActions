@@ -1,7 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
+
 <!DOCTYPE html>
 <html>
+<style>
+.btn-select{
+            background: linear-gradient(45deg, #474E93, #7E5CAD);
+            border: none;
+            border-radius: 10px;
+            padding: 12px;
+            font-weight: 600;
+            width: 100%;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+
+            </style>
+
 <head>
     <meta charset="UTF-8">
     <title>Dashboard </title>
@@ -43,8 +59,12 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Item 1</h5>
-                        <h2 class="card-text">description</h2>
+                        <h5 class="card-title">CopyPasta App</h5>
+                        <form action="dashboard" method="POST"  modelAttribute="userDTO">
+                                       <button type="submit" class="btn btn-select">
+                                       <i class="fas fa-select-alt me-2"></i> Select
+                                       </button>
+                                       </form>
                     </div>
                 </div>
             </div>
