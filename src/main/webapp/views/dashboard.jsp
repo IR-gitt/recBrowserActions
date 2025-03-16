@@ -15,7 +15,6 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s;
-
             </style>
 
 <head>
