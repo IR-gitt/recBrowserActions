@@ -150,10 +150,12 @@
                                <i class="fas fa-user-plus me-2"></i>Enter
                            </button>
             </form >
+                    <form action="backToDash" method="POST">
 
-            <div class="login-link">
-                <p>Already have an account? <a href="login">Sign In</a></p>
-            </div>
+                           <button type="Back" class="btn btn-bck">
+                               <i class="fas fa-user-plus me-2"></i>Back
+                           </button>
+            </form >
         </div>
     </div>
 </body>

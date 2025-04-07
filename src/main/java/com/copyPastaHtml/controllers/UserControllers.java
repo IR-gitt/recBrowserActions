@@ -23,8 +23,8 @@ public class UserControllers {
         return "login";
     }
 
-    @RequestMapping(path = "/dashboard", method = RequestMethod.POST)
-    public String registration() {
+    @RequestMapping(path = "/copyPastaApp", method = RequestMethod.POST)
+    public String copyPastaApp() {
         return "copyPastaApp";
     }
 
@@ -49,6 +49,12 @@ public class UserControllers {
     public String registration(Model model) {
         model.addAttribute("UserDTO", new UserDTO());
         return "registration";
+    }
+
+    @RequestMapping(path = "/copyPastaApp", method = RequestMethod.POST)
+    public String copyPasta(@ModelAttribute("userDTO") UserDTO userDTO) {
+        //js и sel
+        return "copyPastaApp";
     }
 }
 
