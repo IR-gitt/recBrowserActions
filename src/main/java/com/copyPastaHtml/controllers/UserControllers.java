@@ -23,7 +23,7 @@ public class UserControllers {
         return "login";
     }
 
-    @RequestMapping(path = "/copyPastaApp", method = RequestMethod.POST)
+    @RequestMapping(path = "/copyPastaApp", method = RequestMethod.GET)
     public String copyPastaApp() {
         return "copyPastaApp";
     }
