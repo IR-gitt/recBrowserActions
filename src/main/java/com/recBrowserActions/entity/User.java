@@ -1,4 +1,4 @@
-package com.copyPastaHtml.entity;
+package com.recBrowserActions.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

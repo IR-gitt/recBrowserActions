@@ -1,7 +1,7 @@
-package com.copyPastaHtml.controllers;
+package com.recBrowserActions.controllers;
 
-import com.copyPastaHtml.dto.UserDTO;
-import com.copyPastaHtml.service.UserService;
+import com.recBrowserActions.dto.UserDTO;
+import com.recBrowserActions.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -54,6 +54,19 @@ public class UserControllers {
     @RequestMapping(path = "/copyPastaApp", method = RequestMethod.POST)
     public String copyPasta(@ModelAttribute("userDTO") UserDTO userDTO) {
         //js и sel
+
+        // 1. получить с html ссылку для js (в js код для возврата путей элементов)
+
+
+        // 2. нажатие на элементы отправляют на сервер
+
+        // 3. css i xpath после нажатия на элементы
+
+        // 4. принять элементы и сохранить
+
+        // 5. после окончания отобразить во вкладке нажатые элементы
+
+        // 6. запуск по скрипту
         return "copyPastaApp";
     }
 }

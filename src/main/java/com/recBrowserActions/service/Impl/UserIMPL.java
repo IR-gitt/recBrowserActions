@@ -1,9 +1,9 @@
-package com.copyPastaHtml.service.Impl;
+package com.recBrowserActions.service.Impl;
 
-import com.copyPastaHtml.dto.UserDTO;
-import com.copyPastaHtml.entity.User;
-import com.copyPastaHtml.repo.UserRepo;
-import com.copyPastaHtml.service.UserService;
+import com.recBrowserActions.dto.UserDTO;
+import com.recBrowserActions.entity.User;
+import com.recBrowserActions.repo.UserRepo;
+import com.recBrowserActions.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

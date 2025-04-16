@@ -1,4 +1,4 @@
-package com.copyPastaHtml.dto;
+package com.recBrowserActions.dto;
 
 import lombok.Getter;
 import lombok.Setter;

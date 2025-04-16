@@ -8,10 +8,10 @@
         <version>3.3.8</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.copyPastaHtml</groupId>
-    <artifactId>copyPastaHtml</artifactId>
+    <groupId>com.recBrowserActions</groupId>
+    <artifactId>recBrowserActions</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>copyPastaHtml</name>
+    <name>recBrowserActions</name>
     <description>Demo project for Spring Boot</description>
     <url/>
     <licenses>

@@ -1,7 +1,7 @@
-package com.copyPastaHtml.service;
+package com.recBrowserActions.service;
 
 
-import com.copyPastaHtml.dto.UserDTO;
+import com.recBrowserActions.dto.UserDTO;
 
 public interface UserService {
     String addUser(UserDTO userDTO);

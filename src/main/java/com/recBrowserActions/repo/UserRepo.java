@@ -1,6 +1,6 @@
-package com.copyPastaHtml.repo;
+package com.recBrowserActions.repo;
 
-import com.copyPastaHtml.entity.User;
+import com.recBrowserActions.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Repository;
