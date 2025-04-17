@@ -127,36 +127,44 @@
             <% } %>
 
             <form action="copyPastaApp" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="urlCopy" name="urlCopy"
+                           placeholder="URL Copy" required>
+                    <i class="fas fa-user"></i>
+                </div>
 
-                           <div class="form-group">
-                               <input type="text" class="form-control" id="urlCopy" name="urlCopy"
-                                      placeholder="URL Copy" required>
-                               <i class="fas fa-user"></i>
-                           </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="urlPast" name="urlPast"
+                           placeholder="URL Past" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
 
-                           <div class="form-group">
-                               <input type="text" class="form-control" id="urlPast" name="urlPast"
-                                      placeholder="URL Past" required>
-                               <i class="fas fa-envelope"></i>
-                           </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="userPassword" name="userPassword"
+                           placeholder="Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
 
-                           <div class="form-group">
-                               <input type="text" class="form-control" id="userPassword" name="userPassword"
-                                      placeholder="Password" required>
-                               <i class="fas fa-lock"></i>
-                           </div>
+                <button type="submit" class="btn btn-enter">
+                    <i class="fas fa-user-plus me-2"></i>Enter
+                </button>
+            </form>
 
-                           <button type="Enter" class="btn btn-enter">
-                               <i class="fas fa-user-plus me-2"></i>Enter
-                           </button>
-            </form >
-                    <form action="backToDash" method="POST">
-
-                           <button type="Back" class="btn btn-bck">
-                               <i class="fas fa-user-plus me-2"></i>Back
-                           </button>
-            </form >
+            <!-- Adding ID -->
+            <button id="backButton" class="btn btn-bck">
+                <i class="fas fa-arrow-left me-2"></i>Back
+            </button>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("backButton").addEventListener("click", function () {
+            //TODO
+                window.open("https://example.com", "_blank");
+            });
+        });
+    </script>
 </body>
+
 </html> 
