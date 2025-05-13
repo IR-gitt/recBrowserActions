@@ -58,8 +58,8 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">CopyPasta App</h5>
-                        <form action="dashboard" method="POST"  modelAttribute="userDTO">
+                        <h5 class="card-title">RecBrowserAction App</h5>
+                        <form action="app" method="POST"  modelAttribute="userDTO">
                                        <button type="submit" class="btn btn-select">
                                        <i class="fas fa-select-alt me-2"></i> Select
                                        </button>
@@ -71,7 +71,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Item 2</h5>
-                        <h2 class="card-text">description</h2>
+                        <h2 class="card-text">SOON</h2>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Item 2</h5>
-                        <h2 class="card-text">description</h2>
+                        <h2 class="card-text">SOON</h2>
                     </div>
                 </div>
             </div>

@@ -18,15 +18,12 @@ public class UserControllers {
     private UserService userService;
     static final String JSON_API_CONTENT_HEADER = "Content-type=application/json";
 
-    @RequestMapping("/login")
+    @RequestMapping(path ="/login", method = RequestMethod.GET)
     public String login() {
         return "login";
     }
 
-    @RequestMapping(path = "/copyPastaApp", method = RequestMethod.GET)
-    public String copyPastaApp() {
-        return "copyPastaApp";
-    }
+
 
     @RequestMapping(path = "/login", method = RequestMethod.POST)
     public Serializable loginUser(ModelMap model, @ModelAttribute("userDTO") UserDTO userDTO) {
@@ -51,14 +48,13 @@ public class UserControllers {
         return "registration";
     }
 
-    @RequestMapping(path = "/copyPastaApp", method = RequestMethod.POST)
-    public String copyPasta(@ModelAttribute("userDTO") UserDTO userDTO) {
+    @RequestMapping(path = "/app", method = RequestMethod.GET)
+    public String app(@ModelAttribute("userDTO") UserDTO userDTO) {
         //js и sel
 
         // 1. получить с html ссылку для js (в js код для возврата путей элементов)
 
-
-        // 2. нажатие на элементы отправляют на сервер
+        // 2. нажатие на элементы сохраняются в файл
 
         // 3. css i xpath после нажатия на элементы
 
@@ -67,7 +63,7 @@ public class UserControllers {
         // 5. после окончания отобразить во вкладке нажатые элементы
 
         // 6. запуск по скрипту
-        return "copyPastaApp";
+        return "app";
     }
 }
 

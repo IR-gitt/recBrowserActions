@@ -129,7 +129,7 @@
             <form action="copyPastaApp" method="POST">
                 <div class="form-group">
                     <input type="text" class="form-control" id="urlCopy" name="urlCopy"
-                           placeholder="URL Copy" required>
+                           placeholder="Press URL" required>
                     <i class="fas fa-user"></i>
                 </div>
 
@@ -160,7 +160,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("backButton").addEventListener("click", function () {
-            //TODO
+
                 window.open("https://example.com", "_blank");
             });
         });

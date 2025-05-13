@@ -126,7 +126,7 @@
                 </div>
             <% } %>
 
-            <form action="login" method="POST"  modelAttribute="userDTO">
+            <form action="login" method="POST" modelAttribute="userDTO">
 
                 <div class="form-group">
                     <input type="text" class="form-control" id="userName" name="userName"
