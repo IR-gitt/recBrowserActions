@@ -63,7 +63,7 @@ const fs = require('fs');
             fs.writeFileSync('selectors.json', JSON.stringify(collectedSelectors, null, 2));
             console.log('Селекторы сохранены в selectors.json:', collectedSelectors);
             await driver.quit();
-        }, 30000); // Ожидание кликов в течение 30 секунд
+        }, 30000);// Ожидание кликов в течение 30 секунд
     } catch (error) {
         console.error('Ошибка:', error);
     }

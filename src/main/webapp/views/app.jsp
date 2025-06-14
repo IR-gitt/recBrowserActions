@@ -126,7 +126,7 @@
                 </div>
             <% } %>
 
-            <form action="copyPastaApp" method="POST">
+            <form action="app" method="POST">
                 <div class="form-group">
                     <input type="text" class="form-control" id="urlCopy" name="urlCopy"
                            placeholder="Press URL" required>
@@ -154,17 +154,11 @@
             <button id="backButton" class="btn btn-bck">
                 <i class="fas fa-arrow-left me-2"></i>Back
             </button>
+
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("backButton").addEventListener("click", function () {
-
-                window.open("https://example.com", "_blank");
-            });
-        });
-    </script>
+   <script src="${pageContext.request.contextPath}/js/new.js"></script>
 </body>
 
-</html> 
+</html>

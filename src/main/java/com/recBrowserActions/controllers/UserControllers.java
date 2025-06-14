@@ -50,6 +50,8 @@ public class UserControllers {
 
     @RequestMapping(path = "/app", method = RequestMethod.GET)
     public String app(@ModelAttribute("userDTO") UserDTO userDTO) {
+
+        //todo: делаем расширение
         //js и sel
 
         // 1. получить с html ссылку для js (в js код для возврата путей элементов)
@@ -63,7 +65,7 @@ public class UserControllers {
         // 5. после окончания отобразить во вкладке нажатые элементы
 
         // 6. запуск по скрипту
-        return "app";
+        return "app2";
     }
 }
 
